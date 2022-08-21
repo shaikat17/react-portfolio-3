@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import {
     Link
 } from "react-router-dom";
@@ -13,16 +13,10 @@ import CloseIcon from '@mui/icons-material/Close';
 const Header = () => {
     const [sideBarState, setSideBarState] = useState(false)
 
-    // useEffect(() => {
-    //     console.log("effect")
-    //     console.log(sideBarState)
-    // },[sideBarState])
-
-    // const btnClickHandle = () => {
-    //     setSideBarState(prev => !prev)
-    //     // console.log("Running")
-    //     // console.log(sidebar)
-    // }
+    window.addEventListener("scroll", () => {
+        const header= document.querySelector(".header")
+        header.classList.toggle("active", window.screenY > 200)
+    })
 
     return (
         <React.Fragment>
