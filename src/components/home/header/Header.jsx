@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {
     Link
 } from "react-router-dom";
@@ -11,13 +11,18 @@ import CloseIcon from '@mui/icons-material/Close';
 
 
 const Header = () => {
-    const [sidebar, setSidebar] = useState(false)
+    const [sideBarState, setSideBarState] = useState(false)
 
-    const btnClickHandle = () => {
-        setSidebar(!sidebar)
-        console.log("Running")
-        console.log(!sidebar)
-    }
+    // useEffect(() => {
+    //     console.log("effect")
+    //     console.log(sideBarState)
+    // },[sideBarState])
+
+    // const btnClickHandle = () => {
+    //     setSideBarState(prev => !prev)
+    //     // console.log("Running")
+    //     // console.log(sidebar)
+    // }
 
     return (
         <React.Fragment>
@@ -27,7 +32,7 @@ const Header = () => {
                         <img src="assets/logo.png" alt="" srcset="" />
                     </div>
                     <div className="nav">
-                        <ul className={sidebar ? "nav-links-sidebar" : "nav-links"} onClick={() => setSidebar(false)} >
+                        <ul className={sideBarState ? "nav-links-sidebar" : "nav-links"} onClick={() => setSideBarState(false)}>
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/pages">Pages</Link></li>
                             <li><Link to="/portfolio">Portfolio</Link></li>
@@ -39,9 +44,9 @@ const Header = () => {
                                 <WorkIcon className="HeaderIcon" />
                                 <GridViewIcon className="HeaderIcon" />
                             </li>
-                            <button className="navbar-items-icon" onClick={btnClickHandle}>{sidebar ? <CloseIcon /> : <MenuIcon />}</button>
                         </ul>
                     </div>
+                    <button className="navbar-items-icon" onClick={() => setSideBarState(!sideBarState)}>{sideBarState ? <CloseIcon /> : <MenuIcon />}</button>
                 </div>
             </header>
         </React.Fragment>
@@ -49,3 +54,5 @@ const Header = () => {
 }
 
 export default Header
+
+
