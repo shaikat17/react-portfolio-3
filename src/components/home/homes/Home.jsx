@@ -15,15 +15,15 @@ const Home = () => {
               I AM A <br />
               WEB DESIGNER
             </h1>
-            <div className="scoialIcon">
+            <div className="socialIcon">
               <i className="fab fa-facebook-f facebook"></i>
               <i className="fab fa-instagram instagram"></i>
               <i className="fab fa-twitter twitter"></i>
               <i className="fab fa-youtube youtube"></i>
               <i className="fab fa-pinterest pinterest"></i>
-              <i className="fab fa-dribble dribble"></i>
+              <i className="fab fa-dribbble dribble"></i>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, earum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam in quibusdam veritatis nobis asperiores! Aut earum id aspernatur similique. Est.</p>
             <button className="primary-btn">Contact Us</button>
             </div>
         </div>

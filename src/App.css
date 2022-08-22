@@ -139,4 +139,86 @@ header.active {
   width: 100%;
   position: relative;
 }
+
+.home img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90vh;
+  width: 100%;
+  object-fit: contain;
+  transform: scale(1.1);
+}
+.home h1 {
+  font-size: 60px;
+}
+
+.socialIcon i {
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.socialIcon i:hover {
+  color: #fff;
+}
+
+.facebook {
+  color: #4267b2;
+  border: 1px solid #4267b2;
+}
+
+.facebook:hover {
+  background-color: #4267b2;
+}
+
+.instagram {
+  color: #F70055;
+  border: 1px solid #F70055;
+}
+
+.instagram:hover {
+  background-color: #F70055;
+}
+
+.twitter {
+  color: #1DA1F2;
+  border: 1px solid #1DA1F2;
+}
+
+.twitter:hover {
+  background-color: #1DA1F2;
+}
+
+.youtube {
+  color: #FE0000;
+  border: 1px solid #FE0000;
+}
+
+.youtube:hover {
+  background-color: #FE0000;
+}
+
+.pinterest {
+  color: #B7081B;
+  border: 1px solid #B7081B;
+}
+
+.pinterest:hover {
+  background-color: #B7081B;
+}
+
+.dribble {
+  color: #E04B85;
+  border: 1px solid #E04B85;
+}
+
+.dribble:hover {
+  background-color: #E04B85;
+}
 /* ......................Home................ */
