@@ -1,9 +1,10 @@
 import React from 'react'
+import Home from '../home/homes/Home'
 
 const HomePages = () => {
     return (
         <React.Fragment>
-            <h1>Hello World</h1>
+            <Home />
         </React.Fragment>
     )
 }
