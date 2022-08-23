@@ -4,7 +4,9 @@ import Branding from '../home/Branding'
 import Home from '../home/homes/Home'
 import Service from '../home/service/Service'
 import Skill from '../home/Skill'
+import Work from '../home/work/Work'
 import Wrapper from '../home/Wrapper'
+import WrapperOne from '../home/WrapperOne'
 
 const HomePages = () => {
     return (
@@ -15,6 +17,8 @@ const HomePages = () => {
             <Service />
             <Wrapper />
             <Skill />
+            <WrapperOne />
+            <Work />
         </React.Fragment>
     )
 }

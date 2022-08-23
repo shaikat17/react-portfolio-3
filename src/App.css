@@ -453,3 +453,43 @@ h3 {
   margin-bottom: 20px;
 }
 /* .......................Skill............. */
+/* .......................WrapperOne............. */
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.wrapperOne {
+  background-color: #38d16a;
+}
+
+.wrapperOne h1 {
+  color: #fff;
+}
+
+.wrapperOne p {
+  font-size: 14px;
+  margin: 10px 0px;
+}
+/* .......................WrapperOne............. */
+/* .......................Work............. */
+.work {
+  background-color: #08071c;
+  padding: 40px 0px;
+  height: 170vh;
+}
+
+.work .heading {
+  text-align: center;
+  color: #fff;
+  padding: 50px 0px;
+}
+
+.work .content {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+}
+
+/* .......................Work............. */
