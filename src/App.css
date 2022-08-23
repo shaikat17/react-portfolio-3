@@ -439,4 +439,17 @@ h3 {
   opacity: 0;
   transition: 1s ease 0.3s;
 }
+
+.skill .right {
+  padding: 0 50px;
+}
+
+.skill .right h1 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.skill .right p{
+  margin-bottom: 20px;
+}
 /* .......................Skill............. */
