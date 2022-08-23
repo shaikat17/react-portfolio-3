@@ -3,6 +3,7 @@ import About from '../home/about/About'
 import Branding from '../home/Branding'
 import Home from '../home/homes/Home'
 import Service from '../home/service/Service'
+import Wrapper from '../home/Wrapper'
 
 const HomePages = () => {
     return (
@@ -11,6 +12,7 @@ const HomePages = () => {
             <Branding />
             <About />
             <Service />
+            <Wrapper />
         </React.Fragment>
     )
 }
