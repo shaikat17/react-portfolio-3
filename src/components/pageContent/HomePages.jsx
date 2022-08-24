@@ -1,5 +1,6 @@
 import React from 'react'
 import About from '../home/about/About'
+import Blog from '../home/blog/Blog'
 import Branding from '../home/Branding'
 import Home from '../home/homes/Home'
 import Service from '../home/service/Service'
@@ -19,6 +20,7 @@ const HomePages = () => {
             <Skill />
             <WrapperOne />
             <Work />
+            <Blog />
         </React.Fragment>
     )
 }
