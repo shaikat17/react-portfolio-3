@@ -8,6 +8,7 @@ import './App.css';
 import Footer from "./components/home/Footer";
 import Header from './components/home/header/Header';
 import HomePages from "./components/pageContent/HomePages";
+import Pages from "./components/pages/Pages";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePages />} />
+          <Route path="/pages" element={<Pages />} />} />
         </Routes>
         <Footer />
       </Router>
